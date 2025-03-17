@@ -20,11 +20,9 @@ $last_update = date('j.m.Y');
 
         <div class="coupon_aside-card-rating flex align_c justify_c">
             <div class="coupon_aside-card-rating-wrap flex align_c flex_auto">
-                <?php if ($our_score) : ?>
+                <?php if ($our_score) : ?>					
                     <div class="quick_stars-wrapper">
-                        <div class="quick_stars flex justify_fs align_c" style="width: <?php echo $our_score * 10; ?>%">
-                            <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/website/dist/images/stars-full-l.svg">
-                        </div>
+                        <div class="quick_stars flex justify_fs align_c" style="width: <?php echo $our_score * 10; ?>%"></div>
                     </div>
                 <?php endif; ?>
             </div>

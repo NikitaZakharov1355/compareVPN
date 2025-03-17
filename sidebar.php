@@ -27,7 +27,7 @@ $link = get_field('link', $get_object);
 ?>
 <div class="post_aside flex_auto">
 	<?php if (get_post_type(get_the_ID()) == 'vpn') : ?>
-		<div class="post_aside-top border_lg">
+		<div class="post_aside-top">
 			<a class="post_aside-top-image" href="<?php echo $link['url']; ?>">
 				<?php echo wp_get_attachment_image($logo['ID'], ' full'); ?>
 			</a>
@@ -109,11 +109,9 @@ $link = get_field('link', $get_object);
 										<?php echo $our_score; ?>
 									</div>		
 									<div class="flex justify_c align_c">							
-									<div class="quick_stars-wrapper">
-										<div class="quick_stars flex justify_fs align_c" style="width: <?php echo $our_score * 10; ?>%">
-											<img decoding="async" src="<?php echo get_template_directory_uri(); ?>/website/dist/images/stars-full-l.svg">
+										<div class="quick_stars-wrapper">
+											<div class="quick_stars flex justify_fs align_c" style="width: <?php echo $our_score * 10; ?>%"></div>
 										</div>
-									</div>
 									</div>
 								<?php endif; ?>
 								<a class="button" target="<?php echo $link['target']; ?>" href="<?php echo $link['url']; ?>"><?php echo __('Get Deal!', 'nordvpn') ?></a>

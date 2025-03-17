@@ -25,7 +25,7 @@ $customizeble_list = get_sub_field('customizeble_list');
                 $link = get_the_permalink();
 			    $link_exteranl = get_field('link', $item);
             ?>
-                <div class="post_main-featured-list-item border_lg flex justify_sb align_st">
+                <div class="post_main-featured-list-item flex justify_sb align_st">
                     <?php if ($is_editor_choice) : ?>
                         <div class="post_main-featured-list-item-label font_im flex align_c">
                             <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/website/dist/images/editor-c-ic.svg">
@@ -110,12 +110,10 @@ $customizeble_list = get_sub_field('customizeble_list');
                                 <?php //if ($rating) : ?>
 
                                     <div class="quick_stars-wrap flex align_c justify_fs">
-                                        <div class="rating-value"><?php echo $rating; ?></div>
-                                        <div class="quick_stars-wrapper">
-                                            <div class="quick_stars flex justify_fs align_c" style="width: <?php echo $rating * 10; ?>%">
-                                                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/website/dist/images/stars-full-l.svg">
-                                            </div>
-                                        </div>
+                                        <div class="rating-value"><?php echo $rating; ?></div>					
+										<div class="quick_stars-wrapper">
+											<div class="quick_stars flex justify_fs align_c" style="width: <?php echo $rating * 10; ?>%"></div>
+										</div>
                                     </div>
                                 <?php //endif; ?>
 
@@ -172,12 +170,10 @@ $customizeble_list = get_sub_field('customizeble_list');
                             <div class="coupon_main-reviews-item-descr-top-score flex align_c flex_wrap">
                                 <span class="font_sb"><?php echo __('Our Score:', 'nordvpn'); ?></span>
                                 <div class="coupon_main-reviews-item-descr-top-score-rating flex align_c flex_auto">
-                                    <?php if ($our_score) : ?>
-                                        <div class="quick_stars-wrapper">
-                                            <div class="quick_stars flex justify_fs align_c" style="width: <?php echo $our_score * 10; ?>%">
-                                                <img decoding="async" src="<?php echo get_template_directory_uri(); ?>/website/dist/images/stars-full-l.svg">
-                                            </div>
-                                        </div>
+                                    <?php if ($our_score) : ?>					
+										<div class="quick_stars-wrapper">
+											<div class="quick_stars flex justify_fs align_c" style="width: <?php echo $our_score * 10; ?>%"></div>
+										</div>
                                         <span class="font_ib"><?php echo esc_html($our_score); ?></span>
                                     <?php endif; ?>
                                 </div>
