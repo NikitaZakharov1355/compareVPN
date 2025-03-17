@@ -1,0 +1,144 @@
+@use 'vars'
+
+.header
+    // background: linear-gradient(297.08deg, #2F81ED 16.91%, #54C8F1 85.05%)
+    // backdrop-filter: blur(38px)
+    background-color: vars.$white
+    padding: 1.8rem 0
+    box-shadow: 0 0 .5rem .5rem rgba(0,0,0,.05)
+    position: relative
+    &_container
+        gap: 2rem
+    &_logo
+        text-decoration: none
+        img
+            max-width: 10rem
+            height: auto
+        &-wrap
+            gap: 5rem
+            color: vars.$white
+        &-top
+            font-size: 4rem
+            line-height: 4rem
+        &-bottom
+            font-size: 1.5rem
+            line-height: 1.5rem
+            letter-spacing: 0.22em
+            position: relative
+            padding: 0 .5rem
+            top: -.2rem
+        &-text
+            font-weight: 500
+            font-size: 1.2rem
+            line-height: 1.5rem
+            letter-spacing: -0.02em
+            max-width: 13.3rem
+            color: vars.$dark
+    &_action
+        gap: 3.2rem
+        &-search
+            position: relative
+            &-field
+                border: none
+                font-size: 1.6rem
+                line-height: 2.2rem
+                border-radius: 1rem
+                border: 1px solid vars.$gray
+                padding: 1rem 1rem 1rem 4.5rem
+            &-form
+                position: absolute
+                min-width: 20rem
+                right: 0
+                top: 100%
+                transform: translateY(50%)     
+                display: none
+            &-btn
+                position: absolute
+                left: 1rem
+                top: 50%
+                transform: translateY(-50%) 
+                padding: 0   
+        &-lang
+            position: relative
+            &-switcher
+                display: none
+                position: absolute
+                top: 130%
+                right: 0
+                transform: translateY(0%)  
+                min-width: 14rem
+                box-shadow: 0 0 1rem 1.5rem rgba(0,0,0,.05)
+                max-height: 24rem
+                overflow-y: auto
+                overflow-x: hidden
+                > div
+                    width: 100%
+                a
+                    display: flex
+                    gap: .5rem
+                    align-items: center
+                    color: vars.$dark
+                    font-size: 1.6rem
+                    line-height: 2.2rem
+                    border-radius: 1rem
+                    border: 0px solid vars.$gray
+                    padding: 1rem 1rem 1rem 1rem  
+                    background-color: vars.$white
+                    img
+                        flex: 0 0 auto
+    &_nav
+        font-size: 1.6rem
+        line-height: 1.6rem
+        ul:not(.sub-menu)
+            display: flex
+            gap: 6.2rem
+            align-items: center
+            > li
+                position: relative
+                display: flex
+                align-items: center
+                gap: 1rem
+                padding: 1rem 0
+                &.menu-item-has-children
+                    &:after
+                        content: ''
+                        min-width: 1rem
+                        height: 1rem
+                        background-image: url('../images/arrow-b-ic2.svg')
+                        background-repeat: no-repeat
+                        background-position: center
+                &:hover
+                    > .sub-menu
+                        display: block
+                > a
+                    color: vars.$dark        
+        .sub-menu
+            background-color: vars.$white
+            padding: 1rem
+            border-radius: 1rem
+            position: absolute
+            top: 100%
+            transform: translateY(0rem)
+            z-index: 10
+            min-width: 10rem
+            box-shadow: 0 0 .5rem 1rem rgba(0,0,0,.05)
+            display: none
+            li
+                margin-bottom: .5rem
+                &:last-child
+                    margin-bottom: 0
+            a
+                color: vars.$dark
+
+
+.breadcrumbs
+    padding: 1.6rem 0
+    background-color: vars.$gray-l
+    &_nav
+        color: vars.$gray-d
+        font-size: 1.4rem
+        line-height: 1.4rem
+        p
+            margin-bottom: 0
+        a
+            color: vars.$gray-d

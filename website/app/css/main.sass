@@ -1,0 +1,2015 @@
+@use 'vars'
+
+.coupon
+    padding: 2rem 0
+    &_container
+        gap: 3.2rem
+    &_aside
+        &-card
+            min-width: 30.6rem
+            max-width: 30.6rem
+            width: 100%            
+            border: 1px solid vars.$gray-l2
+            box-shadow: 0px 8px 24px 0px #0000000A
+            border-radius: .8rem
+            padding: 3.2rem 1.6rem
+            position: sticky
+            top: 2rem
+            &-image
+                max-width: 18rem
+                max-height: 13.5rem
+                margin: 0 auto
+                display: block
+            &-rating
+                gap: 1.4rem
+                margin-top: 1rem
+                &-wrap
+                    gap: 1rem
+                &-value
+                    color: vars.$black
+                    font-size: 2.4rem
+                    line-height: 2.9rem
+                &-label
+                    font-size: 2.4rem
+                    line-height: 3.3rem
+                    margin-top: .8rem
+                    padding-bottom: 2rem
+                    margin-bottom: 1.2rem
+                    border-bottom: .05rem solid vars.$gray-d2       
+            &-details       
+                padding: 0 1.1rem  
+                &-row    
+                    gap: 1rem
+                    padding: 1.2rem 0
+                    border-bottom: .05rem solid vars.$gray
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                    &-label
+                        color: vars.$gray-d3
+    &_main
+        &-banner
+            border-top: 1px solid transparent
+            border-bottom: 1px solid transparent
+            border-image-slice: 1
+            border-image: repeating-linear-gradient(to right, vars.$blue 0, vars.$blue 11px, transparent 10px, transparent 22px)      
+            padding: 1.2rem
+            border-radius: 2.4rem
+            gap: 4.2rem
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                z-index: 4
+                left: 0
+                right: 0
+                width: 100%
+                height: 100%
+                top: 0
+                border-left: 1px solid transparent
+                border-right: 1px solid transparent
+                border-image-slice: 1
+                border-image: repeating-linear-gradient(to bottom, vars.$blue 0, vars.$blue 11px, transparent 10px, transparent 22px)      
+            &-logo
+                max-width: 20.1rem
+                position: relative
+                z-index: 6
+            &-text
+                position: relative
+                z-index: 6
+                &-title
+                    font-size: 2.4rem
+                    line-height: 3.3rem
+                    margin-bottom: 1.6rem
+                &-inner
+                    font-size: 2.4rem
+                    line-height: 3.1rem
+                    background: linear-gradient(315deg, #2F81ED 0%, #54C8F1 100%)
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    background-clip: text
+                    text-fill-color: transparent
+        &-head
+            margin-top: 5.6rem
+            &-title
+                color: vars.$black-d2
+                font-size: 2.4rem
+                line-height: 3.3rem
+                padding-left: 2rem
+                position: relative
+                margin-top: 0
+                margin-bottom: 2rem
+                &:before
+                    display: inline-block
+                    position: absolute
+                    left: 0
+                    top: 0
+                    border-radius: 3rem
+                    content: ''
+                    width: 4px
+                    height: 100%
+                    background: linear-gradient(100.06deg, #20A9CB 0%, #0681B8 108%), linear-gradient(315deg, #2F81ED 0%, #54C8F1 100%)
+            &-descr
+                color: vars.$gray-d3
+                font-size: 1.6rem
+                line-height: 2.4rem
+                p
+                    margin-bottom: 0
+        &-list
+            margin-top: 1.2rem
+            padding: 3rem 3rem
+            border-radius: 2.4rem
+            background-color: vars.$blue-l
+            &-card
+                margin-bottom: 2rem
+                box-shadow: 0px 8px 24px 0px #0000000A
+                border-radius: 1.9rem
+                background-color: vars.$white
+                position: relative
+                min-height: 22.4rem
+                &:last-of-type
+                    margin-bottom: 0
+                &-discount
+                    max-width: 18rem
+                    width: 100%
+                    font-size: 4.6rem
+                    line-height: 4.6rem
+                    span
+                        font-size: 3.2rem
+                        line-height: 3.2rem
+                    &-box
+                        max-width: 10rem
+                        width: 100%
+                        margin: 0 auto
+                &:before
+                    content: ''
+                    position: absolute
+                    z-index: 5
+                    top: 0
+                    left: 15rem
+                    height: 100%
+                    width: 5.7rem
+                    background-image: url('../images/divider-ic.svg')
+                    background-repeat: repeat-y
+                    background-position: center
+                &-details
+                    max-width: 100%
+                    width: 100%
+                    padding-left: 4rem
+                    padding-right: 4rem
+                    padding-top: 2rem
+                    padding-bottom: 2rem
+                    &-main
+                        gap: 1.6rem
+                    &-notice
+                        gap: 1.6rem
+                        font-size: 2.4rem
+                        line-height: 2.4rem                        
+                        img
+                            min-width: 2.4rem
+                    &-title
+                        font-size: 3.2rem
+                        line-height: 2.4rem
+                    &-text
+                        color: vars.$gray-d3
+                        font-size: 2rem
+                        line-height: 2.4rem
+                    &-subtext
+                        color: vars.$gray-d3
+                        font-size: 2rem
+                        line-height: 2.4rem    
+        &-reviews
+            margin-top: 8rem
+            &-item
+                padding: 1rem 3.2rem
+                border-radius: 2.4rem
+                margin-bottom: 4.2rem
+                gap: 6.4rem
+                position: relative
+                background-color: vars.$white
+                box-shadow: -1px 1px 20px 0px #10182808, 1px -1px 20px 0px #10182808
+                &:before
+                    content: ''
+                    width: calc(100% + .2rem)
+                    height: calc(100% + .2rem)
+                    position: absolute
+                    border-radius: 2.4rem
+                    top: -.1rem
+                    left: -.1rem
+                    z-index: -1
+                    background: linear-gradient(100.28deg, #FFD83E 0%, #FF972F 87.54%)
+                &:last-child
+                    margin-bottom: 0
+                &-logo
+                    width: 100%
+                    max-width: 20rem
+                    text-align: center
+                &-descr
+                    padding: 2.2rem 0
+                    &-top
+                        gap: 1rem
+                        margin-bottom: .8rem
+                        &-right
+                            gap: 1rem
+                        &-score
+                            font-size: 2.4rem
+                            line-height: 3.6rem
+                            gap: 1rem
+                        &-counter
+                            color: vars.$blue-l2
+                            font-size: 1.6rem
+                            line-height: 2.4rem
+                    &-text
+                        color: vars.$gray-d3
+                        font-size: 1.6rem
+                        line-height: 2.5rem
+                        margin-bottom: 1.6rem
+                    .button
+                        border-radius: 1.2rem
+                        padding: 1.2rem 1.8rem
+                        max-width: 13rem
+                        font-size: 1.2rem
+                        line-height: 1.2rem
+                        gap: 1rem
+
+.post_main-comments-form form 
+    .submit
+        margin-top: 1.5rem
+
+.faq
+    margin-top: 5.6rem
+    &_item
+        padding-bottom: 2.4rem
+        border-bottom: 1px solid vars.$gray-d4
+        margin-bottom: 1.6rem
+        &:last-child
+            margin-bottom: 0
+        &-head
+            color: vars.$black-d2
+            font-size: 2.4rem
+            line-height: 3.3rem
+            cursor: pointer
+            position: relative
+            padding: 0 4.3rem
+            transition: all .3s ease
+            &:hover
+                opacity: .8
+            &:before
+                content: '•'
+                position: absolute
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+                width: 1.5rem
+                height: 1.5rem
+                line-height: 1.5rem
+            &:after
+                content: ''
+                position: absolute
+                right: 0
+                top: 50%
+                transform: translateY(-50%)
+                width: 1.5rem
+                height: 1.5rem
+                background-image: url('../images/plus-ic.svg')
+                background-repeat: no-repeat
+                background-position: center
+        &-content
+            padding: 1.6rem 3.2rem 0rem
+            color: vars.$gray-d3
+            font-size: 1.6rem
+            line-height: 2.4rem
+            a
+                color: vars.$blue-l2
+
+            
+.footer
+    background-color: vars.$blue-l4
+    position: relative
+    overflow: hidden
+    &:before, &:after
+        content: ''
+        position: absolute
+        width: 52.5rem
+        height: 52.5rem
+        background-color: #AAC8FF70
+        border-radius: 100%
+        filter: blur(20rem)
+        z-index: 5
+    &:before
+        left: -14rem
+        bottom: -27.5rem
+    &:after
+        background-color: #8FB7FFB8
+        top: -40rem
+        right: -42rem
+    &_top
+        gap: 1rem
+        position: relative
+        z-index: 6
+        padding: 5.8rem 0 10.2rem
+    h5
+        color: vars.$black-d3
+        font-size: 1.3rem
+        line-height: 2.4rem
+        margin: 0 0 2.7rem
+        font-weight: 700
+        // font-family: "Inter-Bold"
+        text-transform: uppercase  
+    &_logo
+        img
+            max-width: 10rem  
+    &_subscribe
+        max-width: 29.3rem
+        form
+            input    
+                border: 1px solid vars.$blue-l2
+                border-radius: .5rem
+                color: vars.$dark
+                font-size: 1.6rem
+                line-height: 2.4rem
+                height: 5.5rem
+                transition: all .3s ease
+                outline: none
+                &:focus, &:hover
+                    border-color: vars.$dark!important
+                &::placeholder
+                    color: vars.$gray-d6
+            .button
+                margin-top: 1.6rem
+                background: linear-gradient(315deg, #2F81ED 0%, #54C8F1 100%)
+                font-size: 1.6rem
+                line-height: 2.4rem
+                padding: 1.1rem 4.2rem
+    &_nav
+        ul
+            a
+                color: vars.$gray-d5
+                font-size: 1.6rem
+                line-height: 3.3rem
+    &_info
+        max-width: 42.4rem
+        &-title
+            margin: 0
+            background: linear-gradient(315deg, #2F81ED 0%, #54C8F1 100%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent    
+            font-size: 2.2rem
+            line-height: 2.4rem
+            font-weight: 700
+            // font-family: "Inter-Bold"
+        &-subtitle
+            font-size: 2rem
+            line-height: 2rem
+            background: linear-gradient(315deg, #2F81ED 0%, #54C8F1 100%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent    
+        &-text
+            font-size: 1.6rem
+            line-height: 2.5rem
+            color: vars.$gray-d5
+            margin: 2.4rem 0
+        &-socials
+            gap: 1.6rem
+        &-link
+            width: 3.2rem
+            height: 3.2rem
+            background: linear-gradient(315deg, #2F81ED 0%, #54C8F1 100%)
+            border-radius: 3.2rem
+            img
+                max-width: 100%
+    &_copyright
+        border-top: 1px solid #42424233
+        color: vars.$black-d3
+        font-size: 1.1rem
+        line-height: 2rem
+        padding: 2.2rem 0
+        p
+            margin-bottom: 0
+
+// blog details
+
+.post
+    padding: 4rem 0
+    &_container
+        gap: 3.8rem
+    &_aside
+        max-width: 29.4rem
+        width: 100%
+        .coupon_main-head
+            margin-top: 2rem
+            &-title 
+                font-size: 2.4rem
+                line-height: 3.3rem
+                margin-bottom: 0rem
+        &-top
+            padding: 1.6rem
+            margin-bottom: 1.6rem
+            background-color: vars.$gray-l5
+            text-align: center
+            .button
+                width: 100%
+                padding: 1.2rem
+                font-size: 1.6rem
+                line-height: 2.4rem
+                text-align: center
+                justify-content: center
+            &-image
+                background-color: vars.$white
+                padding: .4rem
+                text-align: center
+                margin: 0 auto
+                text-align: center
+                display: inline-block
+                img
+                    max-height: 9rem
+                    width: auto
+            &-rating
+                margin-top: .8rem
+                margin-bottom: 1.6rem
+                gap: .8rem
+                color: vars.$black-d2
+                &-label
+                    font-size: 2rem
+                    line-height: 2rem
+                &-value
+                    font-size: 2.8rem
+                    line-height: 2.4rem
+        &-contents
+            &-title
+                color: vars.$black-d2
+                font-size: 2rem
+                line-height: 2.4rem
+                padding-bottom: 2rem
+                margin-right: 2.4rem
+                background-color: vars.$white
+                position: relative
+                z-index: 8
+            &-list
+                font-size: 1.6rem
+                line-height: 2.4rem
+                position: relative
+                &-scroll
+                    max-height: 43.2rem
+                    overflow-y: auto      
+                    margin-top: -4.8rem
+                    padding-top: 4.8rem   
+                    ul
+                        border-top: 1px solid vars.$gray-d2
+                        padding-top: 3.2rem
+                        margin-right: 1.2rem      
+                        li
+                            border-bottom: 1px solid vars.$gray
+                            padding-bottom: 1rem                                                 
+                a
+                    color: vars.$gray-d3
+                &.scrolled-to-bottom
+                    &:before
+                        display: none
+                &::before
+                    content: ''
+                    position: absolute
+                    z-index: 5
+                    bottom: 0
+                    left: 0
+                    width: 100%
+                    height: 20%
+                    background: linear-gradient(179.32deg, rgba(255, 255, 255, 0) 20%, #FFFFFF 99.44%)
+                li
+                    margin: .7rem 0
+                    padding: 0rem .7rem
+                    position: relative
+                    display: flex
+                    gap: 1.8rem
+                    align-items: flex-start
+                    &:before
+                        content: '' 
+                        border: 1px solid vars.$blue-l2
+                        border-radius: 100%
+                        min-width: .8rem
+                        height: .8rem
+                        display: block
+                        position: relative
+                        z-index: 4
+                        top: 1rem
+                        transition: all .3s ease
+                    &.active, &:hover
+                        a
+                            color: vars.$black-d2
+                        &:before
+                            background-color: vars.$blue-l2
+        &-featured
+            &-list
+                &-item
+                    padding: 1rem 0
+                    margin-bottom: 0rem
+                    gap: 1.6rem
+                    border-bottom: 1px solid vars.$gray
+                    &-logo
+                        position: relative
+                        background-color: vars.$white
+                        border-radius: 2rem
+                        max-width: 11.9rem
+                        width: 100%
+                        box-shadow: 1px -1px 20px 0px #1018280F                      
+                        &-label
+                            background-color: vars.$yellow
+                            border-radius: 2rem 2rem 0 0
+                            text-align: center
+                            color: vars.$white
+                            padding: .6rem
+                            font-size: 1.2rem
+                            line-height: 1.2rem
+                            font-style: italic
+                        &-image
+                            min-height: 9rem
+                            padding: 1rem
+                    &:last-child
+                        margin-bottom: 0
+                    &-descr
+                        padding: 1.4rem 0
+                        text-align: center
+                        width: 100%
+                        &-value
+                            font-size: 1.6rem
+                            line-height: 1.8rem
+                            color: vars.$black-d2
+                            margin-bottom: .8rem
+                            font-weight: 600
+                        &-rating
+                            gap: .2rem
+                            img
+                                width: 1rem
+                        .button
+                            padding: .4rem
+                            width: 100%
+                            margin-top: 1.2rem
+                            text-align: center
+                            justify-content: center
+    &_main
+        width: 100%
+        max-width: 74%
+        figure, .alignnone
+            display: block
+            margin: 2.4rem 0 1.2rem
+        figcaption, .wp-caption-text
+            text-align: center
+            color: vars.$gray-d
+            font-size: 1.6rem
+            line-height: 2.4rem
+            font-weight: 300
+            // font-family: "Inter-Light"
+            margin-top: 2rem    
+            display: block         
+        &-hero
+            background: linear-gradient(180deg, #EFF9FF 0%, #EFF9FF 35%, rgba(229, 239, 255, 0) 100%)
+            border-radius: 2.4rem
+            gap: 1rem
+            &-image
+                img
+                    max-height: 40.6rem
+                    width: auto
+                overflow: hidden
+            &-descr
+                padding: 1rem 1rem 1rem 7rem
+                max-width: 38.7rem
+                width: 100%
+                &-title
+                    margin-bottom: 2rem
+                    h2, h1
+                        color: vars.$dark
+                        font-size: 3.6rem
+                        line-height: 4.1rem
+                        margin-bottom: 1.6rem
+                        margin-top: 0
+                        padding-left: 0
+                        strong
+                            background: linear-gradient(315deg, #2F81ED 0%, #54C8F1 100%)
+                            -webkit-background-clip: text
+                            -webkit-text-fill-color: transparent
+                            background-clip: text
+                            text-fill-color: transparent   
+                    p
+                        font-size: 1.2rem
+                        line-height: 1.4rem
+                        color: vars.$gray-d3
+                .button           
+                    padding: .7rem 2.3rem
+                    margin-bottom: 2rem
+                &-text
+                    color: vars.$dark-d2
+                    font-size: 1.2rem
+                    line-height: 1.5rem
+                    font-style: italic    
+                    img
+                        display: inline-block
+                        vertical-align: middle      
+        &-title
+            font-size: 2.4rem
+            line-height: 2.8rem
+            color: vars.$dark
+        &-info
+            gap: 1.6rem
+            font-size: 1.4rem
+            line-height: 1.6rem
+            margin-top: 2rem
+            &-author
+                gap: 1.2rem
+                img
+                    border-radius: 100%
+                    border: 1px solid vars.$blue-l2
+                    overflow: hidden
+            &-name
+                color: vars.$black-d2
+            &-divider, &-date
+                color: vars.$gray-d2
+        &-thumbnail
+            position: relative
+            border-radius: 1.6rem
+            overflow: hidden
+            min-height: 46.4rem
+            margin: 4.1rem 0
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                object-position: center
+                margin-bottom: -1rem
+            &:before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background: linear-gradient(1.93deg, rgba(2, 10, 14, 0) 26.06%, rgba(2, 10, 14, 0.33) 75.17%)
+        &-content, &-box
+            color: vars.$gray-d3
+            font-size: 1.6rem
+            line-height: 2.4rem
+            padding: 2rem 0
+            .button
+                margin-top: 1.6rem
+            p
+                margin-bottom: 1.6rem
+            h2
+                color: vars.$black-d2
+                font-size: 2.4rem
+                line-height: 3.3rem
+                padding-left: 0rem
+                position: relative
+                margin-bottom: 2rem
+                gap: 2rem
+                &:first-child
+                    margin-top: 0!important
+                .title_inner
+                    position: relative
+                    display: block
+                    padding-left: 2rem
+                    &:before
+                        display: inline-block
+                        position: absolute
+                        left: 0
+                        top: 0
+                        border-radius: 3rem
+                        content: ''
+                        width: 4px
+                        height: 100%
+                        background: linear-gradient(100.06deg, #20A9CB 0%, #0681B8 108%), linear-gradient(315deg, #2F81ED 0%, #54C8F1 100%)                       
+            h3
+                color: vars.$black-d2
+                font-size: 2.4rem
+                line-height: 3.6rem
+                font-weight: 600
+                // font-family: "Inter-SemiBold"
+                margin-bottom: 2rem
+                margin-top: 0
+            h4
+                font-size: 1.6rem
+                line-height: 2.4rem
+                font-weight: 500
+                // font-family: "Inter-Medium"
+                margin-top: 2rem
+                margin-bottom: 1.8rem
+                color: vars.$black-d2
+                gap: 1.2rem
+                span
+                    display: flex
+                    align-items: center
+                    gap: 1.2rem
+                &.blue
+                    padding-bottom: .8rem
+                    border-bottom: 1px solid vars.$blue-d
+                    color: vars.$blue-d
+                &.green
+                    padding-bottom: .8rem
+                    border-bottom: 1px solid vars.$green
+                    color: vars.$green   
+                &.red
+                    padding-bottom: .8rem
+                    border-bottom: 1px solid vars.$red
+                    color: vars.$red  
+                &.yellow
+                    padding-bottom: .8rem
+                    border-bottom: 1px solid vars.$yellow
+                    color: vars.$yellow     
+            .list_row                 
+                ul, ol
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                    color: vars.$gray-d3
+                    font-weight: 500
+                    // font-family: "Inter-Medium"
+                    margin-bottom: 1.6rem
+                    border-radius: 2.4rem
+                    overflow: hidden
+                    padding: 0!important
+                    &:last-child
+                        margin-bottom: 0
+                    a
+                        font-weight: 400
+                        // font-family: "Inter-Regular"
+                    li
+                        padding: 1.2rem 3.2rem 1.2rem 4rem
+                        position: relative
+                        &:nth-of-type(odd)
+                            background-color: vars.$gray-l5
+                        &:before
+                            content: ''
+                            position: absolute
+                            left: 1.6rem
+                            top: 2.3rem
+                            background-color: vars.$gray-d7
+                            width: .5rem
+                            height: .5rem
+                            border-radius: 100%            
+                > p
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                    margin-bottom: 1.6rem
+                    a
+                        color: vars.$blue-l2
+                    &:last-child
+                        margin-bottom: 0             
+                &-buttons
+                    .button
+                        margin: 4.2rem 0 10rem
+        &-featured
+            &-list
+                &-item
+                    position: relative
+                    padding: .9rem 2.4rem
+                    gap: 1rem
+                    border-radius: 1.6rem
+                    margin-bottom: 1.6rem
+                    border: 0.5px solid
+                    border-image: linear-gradient(100.06deg, #20A9CB 0%, #0681B8 108%)
+                    &:last-child
+                        margin-bottom: 0
+                    .button
+                        font-size: 1.2rem
+                        line-height: 1.2rem
+                        padding: 1.8rem 3.5rem                    
+                    &-descr
+                        gap: .6rem
+                        max-width: 46.6rem
+                        width: 100%
+                        padding: 1.3rem 0
+                        &-title
+                            margin: 0 0 .6rem
+                            color: vars.$black-d2
+                            font-size: 2.4rem
+                            line-height: 2.9rem
+                        &-text
+                            display: -webkit-box
+                            overflow: hidden
+                            -webkit-box-orient: vertical
+                            -webkit-line-clamp: 2
+                            color: vars.$gray-d3
+                            font-size: 1.6rem
+                            line-height: 2.5rem
+                            p
+                                margin: 0                        
+                    &-logo
+                        max-width: 20rem
+                        width: 100%
+                        img
+                            max-width: 100%
+                    &-label
+                        position: absolute
+                        top: -.9rem
+                        right: -1.4rem
+                        color: vars.$white
+                        font-size: 1.6rem
+                        line-height: 1.6rem
+                        padding: 1.4rem 3.8rem
+                        border-radius: 0 .8rem 0 0
+                        gap: 1rem
+                        background: linear-gradient(100.06deg, #20A9CB 0%, #0681B8 108%), linear-gradient(315deg, #2F81ED 0%, #54C8F1 100%)
+                        &:before
+                            content: ''
+                            position: absolute
+                            bottom: -1.4rem
+                            right: 0rem
+                            width: 0px
+                            height: 0px
+                            border-style: solid
+                            border-width: 14px 14px 0 0
+                            border-color: vars.$blue-l2 transparent transparent transparent
+                            transform: rotate(0deg)                         
+        &-box
+            border: 2.4rem solid vars.$gray-l5   
+            padding: 2.4rem
+            margin: 2rem 0 2rem
+            &-banner
+                gap: 2rem
+                box-shadow: 1px -1px 20px 0px #0000000F
+                border-radius: 2.4rem
+                background-color: vars.$white
+                background-image: url('../images/overview-banner-bg.svg')
+                background-repeat: no-repeat
+                background-position: center
+                background-size: cover
+                min-height: 41.3rem
+                padding: 2.5rem 2.5rem
+                margin: 2rem 0
+                .button
+                    margin-top: 3.5rem
+                    padding: 1.4rem
+                    border-radius: 1.2rem
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                &-attach
+                    &-logo
+                        border-radius: 2.1rem
+                        text-align: center
+                        display: inline-block
+                        padding: .3rem
+                        box-shadow: 1px -1px 20px 0px #0000000F
+                        margin-bottom: 2.2rem
+                        width: 26.2rem
+                        height: 8.9rem
+                        position: relative
+                        img
+                            margin: 0 auto
+                            height: auto
+                            max-height: 8rem
+                            width: auto
+                            position: absolute
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: 0
+                            right: 0
+                            margin: 0 auto
+                            width: 95%
+                            height: 95%
+                            object-fit: contain
+                &-info
+                    max-width: 36rem
+                    min-width: 36rem
+                    gap: .8rem
+                    &-row
+                        background-image: url('../images/overview-banner-row-bg.svg')
+                        background-repeat: no-repeat
+                        background-position: -5rem 0    
+                        background-size: 100% 100%
+                        background-color: vars.$white
+                        box-shadow: 1px -1px 20px 0px #0000000F
+                        gap: 1rem
+                        padding: 1.2rem 1rem
+                        border-radius: .6rem
+                        color: vars.$gray-d3
+                        font-size: 1.6rem
+                        line-height: 1.2rem    
+                        width: 100%     
+                        &:nth-of-type(1)
+                            background-position: -13rem 0      
+                        &:nth-of-type(2)
+                            background-position: -11rem 0   
+                        &:nth-of-type(3)
+                            background-position: -9rem 0   
+                        &:nth-of-type(4)
+                            background-position: -7rem 0                                                                                                  
+            ul, ol
+                font-size: 1.6rem
+                line-height: 2.4rem
+                color: vars.$gray-d3
+                font-weight: 500
+                // font-family: "Inter-Medium"
+                margin-bottom: 1.6rem
+                border-radius: 2.4rem
+                overflow: hidden
+                padding: 0!important
+                &:last-child
+                    margin-bottom: 0
+                a
+                    font-weight: 400
+                    // font-family: "Inter-Regular"
+                li
+                    padding: 1.2rem 3.2rem 1.2rem 4rem
+                    position: relative
+                    &:nth-of-type(odd)
+                        background-color: vars.$gray-l5
+                    &:before
+                        content: ''
+                        position: absolute
+                        left: 1.6rem
+                        top: 2.3rem
+                        background-color: vars.$gray-d7
+                        width: .5rem
+                        height: .5rem
+                        border-radius: 100%            
+        .vpn-table-wrapper
+            overflow-x: auto
+            &-inner
+                border-radius: 2.4rem  
+                border: 1px solid vars.$blue-l2!important    
+                margin-top: 2rem   
+                overflow: hidden
+        table
+            border: none
+            width: 100%
+            border-radius: 2.4rem
+            margin-bottom: 0rem
+            overflow-x: auto
+            color: vars.$gray-d
+            font-size: 1.6rem
+            line-height: 2.4rem     
+            position: relative
+            padding: .1rem
+            margin: 0
+            font-weight: 400
+            // font-family: "Inter-Regular"
+            thead
+                th
+                    border-top: none!important
+                    vertical-align: middle
+                th:first-of-type
+                    border-top-left-radius: 2.4rem          
+                th:last-of-type
+                    border-top-right-radius: 2.4rem 
+            tbody
+                tr:last-of-type
+                    td
+                        border-bottom: none
+                    td:first-of-type
+                        border-bottom-left-radius: 2.4rem          
+                    td:last-of-type
+                        border-bottom-right-radius: 2.4rem                                                    
+            th
+                background-color: vars.$blue-l5
+                color: vars.$black-d2
+                text-align: left
+                min-width: 14.7rem
+            th,td
+                border: none
+                // border-bottom: .25px solid vars.$blue-l2
+                padding: 1.2rem
+                line-height: 2.4rem
+                font-size: 1.6rem                    
+            td
+                background-color: transparent!important
+            tr
+                &:nth-of-type(even)
+                    td
+                        background-color: vars.$gray-l5!important
+        .vpn-table-rank
+            table
+                font-weight: 700
+                // font-family: "Inter-Bold"
+                th
+                    font-size: 2.4rem
+                    line-height: 2.9rem
+                    padding: 2.1rem 2.4rem
+                td
+                    vertical-align: middle
+                    padding: 1.3rem 2.4rem
+                .logo
+                    max-width: 7.1rem
+                    max-height: 5.3rem
+                .number
+                    width: 3.2rem
+                    height: 3.2rem
+                    border-radius: .4rem
+                    color: vars.$white
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                    background: linear-gradient(100.06deg, #20A9CB 0%, #0681B8 108%)
+                .rating-value
+                    color: vars.$black-d2
+                    font-size: 1.6rem
+                    line-height: 1.8rem
+                    margin-bottom: 0rem
+                    max-width: 6rem
+                    position: relative
+                    top: .2rem
+                    text-align: center
+                .stars
+                    gap: .2rem
+                    img
+                        width: 1rem
+                .save
+                    font-size: 1.2rem
+                    line-height: 1.2rem
+                    padding: 1.8rem
+                    color: vars.$blue-l2
+                    text-align: center
+                    background-color: #ECF9FF1A
+                    min-width: 16.4rem
+                    background-image: repeating-linear-gradient(90deg, #49b3f0, #49b3f0 5px, transparent 5px, transparent 10px), repeating-linear-gradient(180deg, #49b3f0, #49b3f0 5px, transparent 5px, transparent 10px), repeating-linear-gradient(90deg, #49b3f0, #49b3f0 5px, transparent 5px, transparent 10px), repeating-linear-gradient(180deg, #49b3f0, #49b3f0 5px, transparent 5px, transparent 10px)
+                    background-position: left top, right top, left bottom, left top
+                    background-repeat: repeat-x, repeat-y, repeat-x, repeat-y
+                    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%                    
+                .button
+                    font-size: 1.2rem
+                    line-height: 1.2rem
+                    padding: 1.8rem
+                    min-width: 16.4rem
+        &-cta
+            min-height: 14.4rem
+            gap: 1rem
+            padding: 1rem 6.3rem
+            border-radius: 1.6rem
+            margin: 4rem 0 4rem
+            box-shadow: 1px -1px 20px 0px #0000000F, -1px 1px 20px 0px #0000000F
+            &-title
+                font-size: 1.6rem
+                line-height: 2.5rem
+                font-weight: 500
+                color: vars.$black-d2
+            &-text
+                font-size: 1.6rem
+                line-height: 2.5rem
+                color: vars.$black-d2
+                margin-top: 2rem
+            &.border_lg-o
+                p
+                    color: vars.$black-d2
+            p
+                color: vars.$gray-d3
+                margin: 0!important
+                font-size: 1.6rem
+                line-height: 2.4rem
+                font-style: italic
+                strong
+                    color: vars.$blue-l2
+            .button
+                font-size: 1.6rem
+                line-height: 2.4rem
+                padding: 1.4rem 4.2rem
+        &-author
+            border: 1px solid vars.$blue-l2
+            margin-top: 10rem
+            border-radius: 1.6rem
+            overflow: hidden
+            &-title
+                background-color: vars.$blue-l5
+                padding: 1rem
+                font-size: 2rem
+                line-height: 3.2rem
+            &-descr
+                padding: 2.4rem
+                margin: 1.6rem 0
+                &-text
+                    color: vars.$gray-d3
+                    font-size: 1.6rem
+                    line-height: 2.5rem
+                    margin-top: 1.6rem
+                &-socials
+                    gap: 2.4rem
+                    margin-top: 1.6rem
+                &-action
+                    margin-top: 2rem
+                    &-title
+                        color: vars.$black-d2
+                        font-size: 2rem
+                        line-height: 3.2rem
+                    &-rating
+                        gap: 1.2rem
+                        margin-top: 1.8rem
+                        img
+                            cursor: pointer
+                            transition: all .3s ease
+                            &:hover
+                                opacity: .8
+        &-comments
+            margin-top: 5rem
+            .comment-rating
+                flex: 0 0 auto
+                gap: .2rem
+            .comment-head 
+                gap: 1rem            
+            &-form
+                background-color: vars.$blue-l
+                padding: 3.2rem
+                margin-bottom: 5rem
+                a
+                    color: vars.$blue-l2
+                form
+                    display: flex
+                    column-gap: 3.3rem
+                    flex-wrap: wrap
+                    .submit
+                        background: linear-gradient(315deg, #2F81ED 0%, #54C8F1 100%)
+                        font-size: 2rem
+                        line-height: 2rem
+                        font-weight: 500
+                        // font-family: "Inter-Medium"
+                        padding: 2.2rem 4.4rem!important
+                        color: vars.$white!important
+                    p
+                        width: 100%
+                    .comment-form-author, .comment-form-email
+                        width: 48%
+                        order: -1
+                    .comment-notes
+                        display: none
+                label
+                    font-size: 1.6rem
+                    line-height: 2.1rem
+                    display: block
+                    margin-bottom: 1.6rem
+                    color: vars.$dark
+                input, textarea
+                    color: vars.$dark
+                    font-size: 1.6rem
+                    line-height: 2.1rem
+                    padding: 1.6rem!important
+                    border: 1px solid vars.$gray-l6!important
+                    border-radius: .8rem!important
+                    resize: none
+                    outline: none!important
+                    transition: all .3s ease
+                    &:hover, &:focus, &:active
+                        border: 1px solid vars.$blue-l2!important
+                    &:placeholder
+                      color: vars.$gray-d8  
+                .comment-reply-title
+                    font-size: 2.4rem
+                    line-height: 2.4rem
+                    margin-bottom: 4.2rem
+                    margin-top: 0
+                    color: vars.$dark
+                p
+                    font-size: 1.6rem
+                    line-height: 2.1rem
+                    color: vars.$gray-d8
+                    margin-bottom: 2rem
+                    br
+                        display: none
+                .comment-form-url
+                    display: none
+                .comment-form-cookies-consent
+                    position: relative
+                    display: flex
+                    gap: 1.6rem
+                    align-items: center
+                    margin-top: 1.2rem
+                    margin-bottom: 2rem
+                    label
+                        margin-bottom: 0
+                    &:before
+                        content: ''
+                        min-width: 2.4rem
+                        height: 2.4rem
+                        border-radius: .4rem
+                        border: 1px solid vars.$gray-d2
+                        background-color: vars.$white
+                        font-size: 2rem
+                        line-height: 2rem
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        color: vars.$blue-l2
+                        transition: all .3s ease
+                    &.checked
+                        &:before
+                            border: 1px solid vars.$blue-l2
+                            content: '✓'
+                    input
+                        position: absolute
+                        width: 2.4rem
+                        height: 2.4rem
+                        left: 0
+                        top: 0
+                        opacity: 0
+                        cursor: pointer
+            &-list
+                margin-bottom: 10rem
+                .comment-actions-wrap
+                    gap: 1rem
+                .comment-actions-like-counter
+                    color: vars.$gray-d3
+                    font-size: 1.6rem
+                    line-height: 2.7rem
+                .button
+                    font-size: 2rem
+                    line-height: 2rem
+                    padding: 2.2rem 7rem
+                    background: linear-gradient(315deg, #2F81ED 0%, #54C8F1 100%)
+                    margin-top: 6.4rem
+                .title-comments
+                    font-size: 2.4rem
+                    line-height: 2.4rem
+                    margin-bottom: 4.2rem
+                    margin-top: 0
+                    color: vars.$dark  
+                    display: none                  
+                .fn
+                    font-size: 2rem
+                    line-height: 3rem
+                    font-weight: 500
+                    // font-family: "Inter-Medium"
+                .comment-meta
+                    margin-bottom: 1.8rem   
+                    display: flex
+                    justify-content: space-between
+                    gap: 1rem
+                    align-items: center
+                .says
+                    display: none
+                .comment-content
+                    font-size: 1.6rem
+                    line-height: 2.7rem
+                    color: vars.$gray-d3
+                .comment-metadata
+                    .comment-edit-link
+                        font-size: 1.6rem
+                        line-height: 2.7rem 
+                        color: vars.$blue-l2                   
+                    time
+                        font-size: 1.6rem
+                        line-height: 2.7rem
+                        color: vars.$gray-l7 
+                    > a
+                        pointer-events: none
+                .comment-body
+                    padding: 3.2rem 0 1.8rem 8rem!important   
+                    border-bottom: 1px solid vars.$gray-d4!important
+                    display: flex
+                    gap: 1rem
+                    flex-direction: column
+                .comment-actions
+                    font-size: 1.6rem
+                    line-height: 2.7rem  
+                    gap: 1.2rem                  
+                    button, a
+                        font-size: 1.6rem
+                        line-height: 2.7rem
+                        color: vars.$dark    
+                        &:hover
+                            background-color: transparent    
+                    .comment-like-button
+                        position: relative
+                        gap: 1.2rem
+                        &.active
+                            &:before
+                                background-image: url('../images/like-blue.svg')                            
+                        &:before
+                            content: ''
+                            width: 2rem
+                            height: 1.8rem
+                            background-image: url('../images/like.svg')
+                            background-repeat: no-repeat
+                            background-position: center
+                            transition: all .3s ease
+                        &.active, &:hover, &:active
+                            &:before
+                                background-image: url('../images/like-blue.svg')
+        .inline_banner + .inline_banner
+            margin: 2rem 0 2rem
+        &-notice
+            background-color: vars.$blue-l
+            padding: 3.2rem 2.4rem
+            margin: 2rem 0 4rem
+            border: 1px solid vars.$blue-l2   
+            gap: 2rem   
+            border-radius: 2.4rem
+            &-title
+                font-size: 2.4rem
+                line-height: 3.3rem
+                color: vars.$black-d2
+                margin-bottom: 2rem
+            &-text
+                font-size: 1.6rem
+                line-height: 2.4rem
+            ul
+                margin-top: -.8rem
+                li
+                    padding: .8rem 2.8rem
+                    color: vars.$black-d2
+                    position: relative
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                    &:before
+                        top: 1.8rem!important
+                        left: 1rem!important
+                        background-color: vars.$black-d2
+                        content: ''
+                        position: absolute
+                        width: .5rem
+                        height: .5rem
+                        border-radius: 100%                        
+        .mejs-overlay-button
+            background-image: url('../images/play_btn.svg')
+            background-position: center
+            background-repeat: no-repeat
+        .wp-video
+            position: relative
+            border-radius: 2.4rem
+            overflow: hidden
+            min-height: 52.2rem
+            width: 100%!important
+            margin-bottom: 1.6rem
+            margin-top: 2rem
+            + p
+                color: vars.$gray-d
+                font-size: 1.6rem
+                line-height: 1.8rem
+                font-style: italic
+                text-align: center
+            button
+                background-color: transparent!important
+        &-inner
+            margin-top: 2rem
+            &-list
+                column-gap: 1%
+                row-gap: 1.2rem
+                &-box
+                    width: 30.8%
+                    box-shadow: 1px -1px 20px 0px #0000000F, -1px 1px 20px 0px #0000000F
+                    background-color: vars.$white
+                    padding: 4.2rem 2.4rem
+                    border-radius: 1.6rem
+                    min-height: 40.8rem
+                    gap: 1rem
+                    position: relative
+                    &.border_lg
+                        &:before
+                            background-image: linear-gradient(153.08deg, #F19B25 -2.59%, #E55E29 98.49%)
+                    &.active
+                        padding-top: 5.6rem
+                        padding-bottom: 5.6rem
+                        min-height: 43.6rem
+                        border: 1px solid vars.$orange
+                        .button
+                            background: linear-gradient(91.81deg, #F29E24 -0.03%, #E45729 99.97%)!important
+                            color: vars.$white
+                    &-recommend
+                        position: absolute
+                        top: -1.1rem
+                        right: 0
+                        left: 0
+                        margin: 0 auto
+                        border-radius: .8rem
+                        background-color: vars.$blue-l
+                        border: 1px solid vars.$blue-l2
+                        padding: .7rem .5rem
+                        text-align: center      
+                        font-size: 2.4rem
+                        line-height: 2.4rem
+                        max-width: 15.4rem
+                    &-month
+                        font-size: 2.4rem
+                        line-height: 2.4rem
+                        color: vars.$gray-d3
+                    &-price
+                        font-size: 5.6rem
+                        line-height: 5.6rem
+                        color: vars.$black-d2
+                    &-type
+                        font-size: 2rem
+                        line-height: 2rem
+                    .button
+                        background: vars.$white
+                        color: vars.$orange
+                        font-size: 1.6rem
+                        line-height: 1.8rem
+                        padding: 1.9rem 1rem
+                        justify-content: center
+                        margin-top: 0
+            div
+                table
+                    td
+                        font-size: 2rem
+                        line-height: 2.4rem
+            h2
+                img
+                    margin-right: 1.5rem
+                    width: 3rem
+            &-table
+                padding: .1rem
+                border-radius: 1.6rem
+                overflow: hidden
+                &-row
+                    padding: 2.6rem 3.2rem
+                    font-size: 1.6rem
+                    line-height: 2.4rem
+                    color: vars.$gray-d3
+                    background-color: vars.$white
+                    display: grid
+                    grid-template-columns: repeat(2,1fr)
+                    gap: 1rem
+                    &:first-of-type
+                        border-top-left-radius: 1.6rem
+                        border-top-right-radius: 1.6rem
+                    &:last-of-type
+                        border-bottom-left-radius: 1.6rem
+                        border-bottom-right-radius: 1.6rem
+                    &:nth-of-type(even)
+                        background-color: vars.$blue-l
+
+.site-main
+    padding: 2rem 0
+
+.cta_wrapper
+    padding: 2rem 0
+    
+.post_main-title-h2
+    font-size: 2.4rem
+    line-height: 3.3rem
+    position: relative
+    margin-top: 0rem
+    margin-bottom: 2rem
+    padding-left: 2rem
+    color: #070707
+    font-weight: 700
+    &:before 
+        position: absolute
+        top: 0
+        left: 0
+        display: inline-block
+        width: 4px
+        height: 100%
+        content: ''
+        border-radius: 3rem
+        background: linear-gradient(100.06deg,#20a9cb 0,#0681b8 108%),linear-gradient(315deg,#2f81ed 0,#54c8f1 100%) 
+
+.post_main-box
+    .title_inner
+        gap: 1rem
+        img
+            flex: 0 0 auto
+            max-width: 2rem
+
+.post_main
+    iframe
+        width: 100%
+        border-radius: 1.6rem
+        overflow: hidden
+        min-height: 46.4rem
+
+.post_aside
+    position: sticky
+    top: 6rem
+
+#rating-feedback
+    font-size: 2rem
+    line-height: 3rem
+    font-weight: 700
+    text-align: center
+    margin-top: 1rem
+    
+.post_main-loop-aside-filter-open
+    display: none
+
+.post_loop
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    gap: 3.2rem
+    &-item
+        border: 1px solid vars.$gray
+        padding: 0rem
+        border-radius: 1rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        gap: 1.5rem
+        box-shadow: 1px -1px 20px 0px #0000000F
+        &.vpn
+            .post-thumbnail
+                img 
+                    max-height: 4.8rem
+                    width: auto                 
+        .post_main-info
+            margin-top: 1rem
+            margin-bottom: 1rem
+        .entry-content
+            margin-bottom: 1rem
+        .button
+            margin-top: 0rem
+            padding: .4rem 1rem
+            border-radius: .5rem
+            max-width: 13rem
+            font-size: 1.4rem
+        .post-thumbnail
+            margin-top: 0rem
+            display: block
+            img
+                max-width: 100%
+                overflow: hidden
+                border-radius: .5rem   
+        .entry
+            &-title
+                font-size: 2rem
+                line-height: 2.8rem
+                margin-bottom: 0rem
+                font-weight: 700
+                a
+                    color: vars.$dark
+            &-meta, &-content
+                font-size: 1.6rem
+                line-height: 2rem 
+            &-meta
+                margin-top: 0rem
+            &-content
+                margin-top: 0rem
+            &-footer
+                display: none
+
+.post_main-comments  
+    .children
+        padding-left: 3rem 
+    .comment-body
+        position: relative 
+    .comment-author
+        display: flex
+        align-items: center
+        gap: 1rem
+    .avatar
+        border-radius: 50%
+        left: 0 
+        position: absolute       
+    
+.flex_auto
+    flex: 0 0 auto
+
+.rating-star
+    transition: all .3s ease
+    background-repeat: no-repeat
+    background-position: center
+    width: 2.1rem
+    height: 2.1rem
+    background-image: url('../images/star-b.svg')
+    cursor: pointer
+    &.selected
+        background-image: url('../images/star.svg')
+
+.comment-form-title
+    order: -1
+
+.comment-rating
+    order: 0
+    margin-bottom: .8rem
+
+.form-submit, .comment-form-cookies-consent
+    order: 2
+
+.comment-form-comment
+    order: 0
+    
+.comment-rating
+    color: vars.$black-d2
+    font-size: 1.6rem
+    line-height: 1.8rem
+    gap: .8rem    
+    margin-bottom: 0
+    label
+        margin-bottom: 0
+    .post_main-author-descr-action-rating
+        margin-top: 0
+
+.comment-title
+    font-size: 1.6rem
+    line-height: 2.1rem
+    color: vars.$black-d2
+
+.total
+    box-shadow: 1px -1px 20px 0px #0000000F
+    background-color: vars.$white
+    border-radius: 2.4rem
+    padding: 1.3rem
+    margin-bottom: 8rem
+    &_rating
+        font-size: 3rem
+        line-height: 4rem
+        color: vars.$black-d2
+        gap: 1.4rem 
+    &-left
+        gap: 3.2rem
+    &-right
+        gap: 1.8rem
+    &_comments
+        font-size: 1.6rem
+        line-height: 2.1rem
+        color: vars.$gray-d8
+    &_title
+            font-size: 3rem
+            line-height: 3.9rem
+    &_logo
+        img
+            max-height: 7.6rem
+            width: auto
+
+.home
+    .breadcrumbs 
+        display: none
+
+.quick_stars
+    overflow: hidden
+    &-wrapper
+        position: relative
+        width: 10rem
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-image: url('../images/stars-full-l.svg')
+            background-repeat: no-repeat
+            background-size: 10rem
+            background-position: center left
+            opacity: .3
+    &-wrap
+        gap: 1rem
+    img
+        height: 1.9rem
+        width: 10rem
+        max-width: unset!important
+
+.coupon_aside-card
+    .quick_stars
+        &-wrapper
+            width: 15rem
+            &:before
+                background-size: 15rem
+        img
+            width: 15rem
+            max-width: unset
+            height: 2.96rem
+
+.coupon_main-reviews
+    .quick_stars 
+        img
+            width: 13.2rem
+            height: 2.9rem
+        &-wrapper
+            width: 13.2rem
+            &:before
+                background-size: 13.2rem            
+
+.featured_image
+    margin: 2rem 0 0
+    position: relative
+    border-radius: 1.6rem
+    overflow: hidden
+    img
+        max-height: 46.4rem
+        object-fit: cover
+        object-position: center
+        border-radius: 1.6rem
+        position: relative
+        z-index: 5
+    &::before
+        z-index: 8
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(1.93deg, rgba(2, 10, 14, 0) 26.06%, rgba(2, 10, 14, 0.33) 75.17%)
+
+.post_main
+    &-wrap
+        gap: 2rem
+    &-loop
+        &-aside
+            max-width: 100%
+            width: 100%
+
+.search-form
+    position: relative
+    &-field
+        border: none
+        font-size: 1.6rem
+        line-height: 2.2rem
+        border-radius: 1rem
+        border: 1px solid vars.$gray
+        padding: 1rem 1rem 1rem 4.5rem
+        width: 100%
+    &-btn
+        position: absolute
+        left: 1rem
+        top: 50%
+        transform: translateY(-50%) 
+        padding: 0       
+        cursor: pointer
+
+.load_more
+    &-wrap
+        margin-top: 2rem
+
+/* Custom Checkbox Styling
+
+.custom-checkbox
+    display: flex
+    align-items: center
+    cursor: pointer
+    margin-bottom: 0px
+    input[type="checkbox"], input[type="radio"]
+        display: none
+
+    /* Hide the default checkbox
+
+.post_main-loop-wrap
+    width: 100%
+
+.not-found
+    position: relative
+    min-height: 55rem    
+    font-size: 2rem
+    line-height: 2.8rem
+    color: vars.$dark
+
+.post_main-wrap
+    min-height: 55vh
+
+.post_loop
+    position: relative
+    align-items: stretch
+    width: 100%
+    font-size: 1.8rem
+    line-height: 2.2rem
+    .post_main-info
+        flex-wrap: wrap
+        gap: .5rem
+    .post_main-info-author
+        gap: .5rem
+    &-item
+        overflow: hidden
+        > div
+            height: 100%
+            display: flex
+            flex-direction: column        
+        &-descr
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between            
+        &.vpn
+            .post-thumbnail
+                margin-left: 2.4rem
+                margin-top: 2.4rem
+        &.post
+            .post-thumbnail
+                min-height: 18rem
+                position: relative
+                img
+                    position: absolute
+                    z-index: 5
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    object-position: center        
+    &-item-descr
+        padding: 2.4rem
+    &-not-found
+        grid-column: span 3
+    &.loading
+        &:before
+            content: ''
+            background-color: vars.$white
+            opacity: .7
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            z-index: 10
+
+.tab-filter-post-wrap
+    margin-top: 2rem
+    margin-bottom: 2rem
+
+.entry-content
+    margin-top: 1rem
+    
+.tag-filter
+    .toggle_inner
+        gap: 1rem
+    &-tabs
+        border-bottom: 1px solid vars.$gray
+        margin-bottom: 2rem
+    label:not(.tag-filter-tab-title)
+        font-size: 1.6rem
+        line-height: 2.2rem
+        color: vars.$dark
+        font-weight: 600
+    &-title
+        font-size: 2rem
+        line-height: 3rem
+        margin-bottom: 1rem
+        font-weight: 700
+        border-bottom: 1px solid vars.$gray
+        padding-bottom: .5rem    
+        text-align: center
+    &-tab
+        &-title
+            font-size: 2.8rem
+            margin-bottom: 0
+            padding: 0 .5rem 1rem
+            transition: all .3s ease
+            border-bottom: 2px solid transparent
+            &.active, &:hover
+                color: vars.$orange
+                border-bottom: 2px solid vars.$orange
+            .custom-checkbox-box
+                display: none
+
+.search
+    &-form
+        max-width: 45rem
+        margin: 2rem auto 0
+    &_top
+        margin-bottom: 2rem
+        max-width: 90rem
+        margin: 0 auto
+    &_title
+        font-size: 4.8rem
+        line-height: 5.2rem
+        margin-bottom: 2rem
+    &_subtext
+        font-size: 1.6rem
+        line-height: 2.4rem
+
+
+.custom-checkbox-box
+    top: -1px
+    width: 18px
+    height: 18px
+    border: 2px solid vars.$gray-d2
+    border-radius: 3px
+    display: inline-block
+    position: relative
+    margin-right: 8px
+    background: vars.$white
+    transition: all 0.3s ease
+.custom-checkbox
+    input[type="checkbox"]:checked + .custom-checkbox-box, input[type="radio"]:checked + .custom-checkbox-box
+        background: vars.$orange
+        border-color: vars.$orange
+        &::after
+            content: ''
+            position: absolute
+            width: 5px
+            height: 8px
+            border: solid vars.$white
+            border-width: 0 2px 2px 0
+            top: 1px
+            left: 4px
+            transform: rotate(45deg)
+    &:hover 
+        .custom-checkbox-box
+            border-color: vars.$orange
+
+.wpml-ls-legacy-dropdown
+    width: 176px
+    max-width: 100%
+
+span.wpml-ls-native, .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle:after
+    color: #000
+
+/* custom gulp fix
+
+button:not(.button):hover
+    background-color: transparent
+
+.wp-caption
+    max-width: 100%
+
+.post_main-inner-text 
+    > p
+        font-size: 1.6rem
+        line-height: 2.4rem
+        margin-bottom: 1.5rem
+        color: vars.$gray-d3
+
+.post_main-inner
+    .button
+        padding: 1.4rem 3rem
+        margin-bottom: 2rem
+        margin-top: 2rem
+    figure
+        margin: 0 auto
+    
+.post_main-thumbnail
+    max-height: 46.4rem
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.post_main-comments-form input:not(.submit), textarea
+    width: 100%
+
+.coupon img
+    max-width: 100%
+
+.post_aside-top-rating-value-wrap 
+    gap: .7rem
+
+.scroll-top
+    position: fixed
+    bottom: 2rem
+    right: 2rem
+    border: 1px solid vars.$blue
+    background: linear-gradient(315deg,#2f81ed 0,#54c8f1 100%)
+    border-radius: 100%
+    width: 45px
+    height: 45px
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 80
+    svg
+        height: 45px
+        width: 45px
+
+.footer_copyright
+    p
+        display: inline
+        margin: 0
+
+
+
+.post_main-featured-list-item-logo
+    justify-content: center
+
+.featured_image::before
+    display: none
+
+.post_aside-contents-list-scroll ul
+    padding-top: 1rem
+
+.post_main-featured-list-item-logo img
+    max-height: 80px
+    width: auto
+
+.vpn-table-wrapper table
+    margin-bottom: 0rem
+
+body .post_main-box-banner
+    margin-bottom: 2rem
+
+.featured_image img
+    width: 100%
+
+@media screen and (min-width: 1200px)
+    .post_main-featured-list-item-link
+        min-width: 14rem
+    .post_main-box h3, .post_main-content h3
+        font-size: 2.2rem
+        color: #161616
+
+@media screen and (max-width: 768px)
+    body .post_main .vpn-table-rank table td
+        background-color: #fff!important
+    .header_action-search-form
+        left: 0
+    body .post_main .vpn-table-rank table
+        tr
+            justify-content: space-between
+        td:nth-of-type(3)
+            max-width: 12rem
+    .quick_stars-wrap .quick_stars-wrapper
+        display: none
+    body .post_main .vpn-table-rank .rating-value
+        min-width: unset
+    table td
+        &:nth-of-type(3)
+            min-width: 12rem
+            padding-left: 1rem
+        &:nth-of-type(2)
+            margin-right: 1rem
+        &:nth-of-type(4)
+            margin-left: 1rem
+            min-width: 4rem
+        &:nth-of-type(5)
+            margin-right: 1rem
+
+.wp-caption-text
+    margin-top: 0px !important
+    color: #727375 !important
+    padding-bottom: 3px
+
+.post_main figure
+    background: #e9e9e9
+    border-radius: 0 10px 10px
